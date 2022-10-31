@@ -36,7 +36,7 @@ header div div a {
   font-size: 21px;
 }
 header div div a:hover {
-  color: #fe5441;
+  color: #fe5341;
 }
 header div div a:nth-of-type(1) {
   flex: 1.2;
