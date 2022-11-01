@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+#ifname-1 {
+  width: 100%;
+  height: 100px;
+}
+#ifname-2 {
+  width: 100%;
+  height: 350px;
+}
+.register-box {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  margin-bottom: 40px;
+  border: 1px #bcbcbc solid;
+  border-radius: 10px;
+}
+.register-box p {
+  /* 标题 */
+  font-size: 22px;
+  line-height: 26px;
+  margin-top: 20px;
+  padding: 0 20px;
+  color: #474747;
+  border-left: 7px #fe5441 solid;
+}
+.register-box div {
+  /* 版心 */
+  width: 60%;
+  margin-left: 30%;
+  margin-top: 50px;
+}
+.register-box div input {
+  width: 65%;
+  height: 50px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-indent: 1em;
+}
+.register-box div input:nth-of-type(2) {
+  width: 40%;
+}
+.register-box div #r-span {
+  display: inline-block;
+  width: 20%;
+  height: 45px;
+  vertical-align: middle;
+  margin-left: 23px;
+  background: url(../img/imgCode.jpg) no-repeat 1px;
+}
+.register-box div input:nth-of-type(3) {
+  width: 40%;
+}
+.register-box div button {
+  width: 22%;
+  height: 50px;
+  border-radius: 10px;
+  margin-left: 15px;
+  background-color: white;
+  color: #ababab;
+  font-size: 16px;
+  border: 1px #bebebe solid;
+}
+.register-box div #zc {
+  width: 65%;
+  height: 50px;
+  background-color: #fe5341;
+  margin-left: 0;
+  font-size: 18px;
+  color: white;
+}
+.register-box div .h-span {
+  color: gray;
+  margin-left: 10px;
+}
