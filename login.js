@@ -14,6 +14,7 @@ var pass_ = getCookie('pass')
 zc.onclick = function () {
     if (phone.value == phone_ && pass.value == pass_) {
         alert('登录成功！')
+        setCookie('win', true)
         location.href = './index.html'
     } else {
         alert('用户名不存在,或密码不正确')

@@ -55,6 +55,44 @@ function fn() {
 var timer = setInterval(fn, 1000)
 
 
+// 返回顶部
+var div_return = document.getElementById('div-return')
+
+onscroll = function () {
+
+    // 获取 屏幕向上滚动了多少
+    var top = document.documentElement.scrollTop
+    // 获取 屏幕设备可见高度
+    var height_ = document.documentElement.clientHeight
+    // 判断 可见高度向上滚动的距离让返回按钮显示
+    if (top > height_) {
+        div_return.style.display = 'block'
+    } else {
+        div_return.style.display = 'none'
+    }
+}
+//  点击回到顶部
+div_return.onclick = function () {
+
+    timer = setInterval(function () {
+        // 获取当前屏幕滚动的距离
+        var scroll_t = document.documentElement.scrollTop
+
+        // 获取步长
+        var step = scroll_t / 10
+
+        // 每隔 10 毫秒 就向上滚动
+        document.documentElement.scrollTop = scroll_t - step
+
+        // 判断 向上滚动的距离 为 0 的时候停下来
+        if (scroll_t <= 0) {
+            clearInterval(timer)
+        }
+    }, 10)
+}
+
+
+
 //  ==============  报告精选 ====================
 //  点赞 
 var zan_1 = document.getElementsByClassName('zan-1')

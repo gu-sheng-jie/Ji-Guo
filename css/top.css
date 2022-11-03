@@ -74,6 +74,23 @@ header div div:nth-of-type(2) button:hover {
   background-color: #fe5341;
   color: white;
 }
+header div div:nth-of-type(2) #top_user {
+  width: 200px;
+  height: 45px;
+  line-height: 45px;
+  position: absolute;
+  top: 20px;
+  font-size: 16px;
+  right: 95px;
+  color: #fe5341;
+  display: none;
+  padding-left: 50px;
+  background: url(../img/用户名.png) no-repeat 8px 3px;
+  background-size: 35px 35px;
+}
+header div div:nth-of-type(2) #top_user:hover {
+  cursor: pointer;
+}
 /* 图片删闪烁 */
 @keyframes fade {
   0%,
