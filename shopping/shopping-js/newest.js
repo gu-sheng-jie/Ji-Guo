@@ -34,11 +34,11 @@ function show() {
     for (var item of dataList) {
         `                                                                               `
         str = `
-            <a href="">
+            <a href="../report/report-a.html">
             <img src="${item.img}" alt="">
             </a>
             <p>${item.text}</p>
-            <p><span class="sp1">${item.like}</span><span class="sp2">${item.words}</span></p>
+            <p><span class="sp1" onclick="fn(this)">${item.like}</span><span class="sp2">${item.words}</span></p>
             <div></div>
                     
         `

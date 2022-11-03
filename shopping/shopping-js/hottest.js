@@ -36,12 +36,13 @@ function show() {
     for (var item of dataList) {
         `                                                                               `
         str = `
-                   <a href="">
-                        <img src="${item.img}" alt="">
-                        <p>${item.text}</p>
-                        <p><span class="sp1">${item.like}</span><span class="sp2">${item.words}</span></p>
-                        <div></div>
-                    </a>
+               <a href="../report/report-a.html">
+               <img src="${item.img}" alt="">
+               </a>
+               <p>${item.text}</p>
+               <p><span class="sp1"  onclick="fn(this)">${item.like}</span><span class="sp2">${item.words}</span></p>
+               <div></div>
+                    
         `
         var li_ = document.createElement('li');
         li_.innerHTML = str;
@@ -64,8 +65,9 @@ function show() {
 
 //点击红心部分
 //  用来判断是偶数还是奇数
-let judge = 1 // 控制心
+var judge = 3 // 控制心
 function fn(that) {
+    var judge = that.innerHTML
     judge++
     if (judge % 2 == 0) {
         that.className = 'sp1_';
