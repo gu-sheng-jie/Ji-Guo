@@ -25,8 +25,6 @@ h3 {
 /*免费试用*/
 .nav {
   width: 1000px;
-  min-width: 1000px;
-  text-align: left;
   margin: 0 auto;
 }
 .nav h1 {
@@ -63,7 +61,7 @@ h3 {
   width: 165px;
   font-size: 18px;
 }
-.nav-b1 a:nth-of-type(1) {
+.nav-b1 .clr {
   color: #474747;
 }
 /*内容部分*/
@@ -72,23 +70,22 @@ h3 {
   /*加载更多部分*/
 }
 .big .all {
-  width: 1000px;
+  width: 1040px;
   margin: 0 auto;
   padding-top: 25px;
 }
 .big .all ul {
   overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 .big .all ul li {
+  float: left;
   position: relative;
   width: 220px;
   height: 286px;
   border: 1px solid #e6e9e9;
   border-radius: 6px;
   background-color: #fff;
+  margin: 0 20px;
   margin-bottom: 40px;
 }
 .big .all ul li > a {
@@ -105,19 +102,28 @@ h3 {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 5;
 }
 .big .all ul li > a img {
-  width: 100%;
+  width: 218px;
+  height: 128px;
 }
 .big .all ul li > a .all-btm {
   padding: 8px 8px 14px;
   text-align: center;
 }
 .big .all ul li > a .all-btm h2 {
-  font-size: 16px;
+  font-size: 14px;
   height: 48px;
-  font-weight: bold;
+  font-weight: 500;
   color: #333;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  /* 这里是超出几行省略 */
+  overflow: hidden;
 }
 .big .all ul li > a .all-btm p:nth-of-type(1) span {
   border: 1px solid #ccc;
@@ -148,6 +154,15 @@ h3 {
   color: #fe5341;
   border: none;
 }
+.big .more .load {
+  display: inline-block;
+  width: 145px;
+  margin: 0 auto;
+  text-indent: 29px;
+  background: url('../../img/loading-icon.gif') no-repeat 0px center;
+  color: #fe5341;
+  display: none;
+}
 .over {
   width: 300px;
   height: 50px;
@@ -157,4 +172,17 @@ h3 {
   text-align: center;
   border-radius: 5px;
   margin: 0 auto;
+}
+/* 图片删闪烁 */
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+img:hover {
+  animation: fade 1s ease-in infinite;
 }

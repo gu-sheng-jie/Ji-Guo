@@ -1,4 +1,25 @@
-// DZtrial加载数据
+// 体验师专享
+var a_ = document.querySelectorAll('.nav-b1  a');
+
+for (var i = 0; i < a_.length; i++) {
+    a_[i].setAttribute('index', i);
+
+    a_[i].onclick = function() {
+
+        var index = this.getAttribute('index');
+        for (var j = 0; j < a_.length; j++) {
+
+            a_[j].className = '';
+            a_[index].className = 'clr';
+        }
+        return false;
+    }
+
+}
+
+
+
+// 数据加载
 
 var btn = document.querySelector('.more button'); //找到按钮
 var load = document.querySelector('.more .load'); //找到正在加载中~~~
@@ -17,6 +38,7 @@ function getData() {
                 data = ajax_.responseText;
                 dataList = JSON.parse(data)
 
+
                 btn.style.display = 'none';
                 load.style.display = 'block';
                 // 当点击后 1秒后再调用show
@@ -24,13 +46,14 @@ function getData() {
                     show()
                 }, 1000)
 
+
             } else {
                 console.log('加载错误');
             }
         }
     }
 }
-// 渲染数据 
+// 渲染数据
 var flg = true; //开关
 
 function show() {
@@ -112,4 +135,3 @@ function show() {
     }
 
 }
-// 数据加载

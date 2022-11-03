@@ -25,8 +25,6 @@
   /*免费试用*/
 .nav{
     width: 1000px;
-    min-width: 1000px;
-    text-align: left;
     margin: 0 auto;
     h1{
         text-align: center; 
@@ -61,33 +59,34 @@
         display: inline-block;
         width: 165px;
         font-size: 18px;
-        &:nth-of-type(1){
-            color: #474747;
-        }
+    }
+    .clr{
+        color: #474747;
     }
 }
 /*内容部分*/
 .big{
     background-color: #F7F7F7;
     .all{
-        width: 1000px;
+        width: 1040px;
         margin: 0 auto;
         padding-top: 25px;
         ul{
             overflow: hidden;
-            display: flex;
-            flex-wrap: wrap;
-            // justify-content: space-evenly;
-            justify-content: space-between;
+            // display: flex;
+            // flex-wrap: wrap;
+            // justify-content: space-between;
             li{
-               
+               float: left;
                 position: relative;
                 width: 220px;
                 height: 286px;
                 border: 1px solid #e6e9e9;
                 border-radius: 6px;
                 background-color: #fff;
+                margin: 0 20px;
                 margin-bottom: 40px;
+                
                 
                 &>a{
                     color: #ccc;
@@ -103,18 +102,33 @@
                         position: absolute;
                         top: 0;
                         right: 0;
+                        z-index: 5;
                     }
                     img{
-                        width: 100%;
+                        width: 218px;
+                        height: 128px;
                     }
                     .all-btm{
                         padding: 8px 8px 14px;
                         text-align: center;
                         h2{
-                            font-size: 16px;
+                            font-size: 14px;
                             height: 48px;
-                            font-weight: bold;
+                            font-weight: 500;
                             color: #333;
+
+                            
+                            word-break: break-all;//文本自动换行样式
+
+                            text-overflow: ellipsis;
+
+                            display: -webkit-box;
+
+                            -webkit-box-orient: vertical;
+
+                            -webkit-line-clamp: 2; /* 这里是超出几行省略 */
+
+                            overflow: hidden;	
                         }
                         p:nth-of-type(1){
                             span{
@@ -156,6 +170,16 @@
             background: url('../../img/more.png' ) no-repeat 0px center;
             color: #fe5341;
             border: none;
+            // display: none;
+        }
+        .load{
+            display: inline-block;
+            width: 145px;
+            margin: 0 auto;
+            text-indent: 29px;
+            background: url('../../img/loading-icon.gif' ) no-repeat 0px center;
+            color: #fe5341;
+            display: none;
         }
     }
 }
@@ -170,6 +194,22 @@
     border-radius: 5px;
     margin: 0 auto;
 }
+
+/* 图片删闪烁 */
+    @keyframes fade {
+        0%,
+        100% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.6;
+        }
+    }
+    
+    img:hover  {
+        animation: fade 1s ease-in infinite;
+    }
+
 
 
 
