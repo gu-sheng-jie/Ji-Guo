@@ -44,8 +44,14 @@ header {
 
             a:nth-of-type(1) {
                 flex: 1.2;
-                background: url(../img/logonew.png) no-repeat 0px 14px;
-                background-size: 80% 65%;
+
+                // background: url(../img/logonew.png) no-repeat 0px 14px;
+                // background-size: 80% 65%;
+                img {
+                    width: 85%;
+                    height: 70%;
+                    margin-top: 10px;
+                }
             }
 
             // a:nth-of-type(2) {
@@ -85,7 +91,46 @@ header {
                     color: white;
                 }
             }
+
+            #top_user {
+                width: 200px;
+                height: 45px;
+                line-height: 45px;
+                position: absolute;
+                top: 20px;
+                font-size: 16px;
+                right: 95px;
+                color: rgb(254, 83, 65);
+                display: none;
+                padding-left: 50px;
+                background: url(../img/用户名.png)no-repeat 8px 3px;
+                background-size: 35px 35px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
         }
     }
+
+}
+
+
+
+/* 图片删闪烁 */
+@keyframes fade {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+}
+
+a:hover img {
+    animation: fade 1s ease-in infinite;
 
 }

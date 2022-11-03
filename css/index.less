@@ -6,20 +6,22 @@
     text-decoration: none;
 }
 
-#ifname-1 {
-    width: 100%;
-    height: 100px;
-}
+// #ifname-1 {
+//     width: 100%;
+//     height: 105px;
+// }
 
 #ifname-2 {
     width: 100%;
     height: 350px;
+    margin-bottom: -5px;
 }
 
+// 顶部图片
 nav {
     width: 100%;
     height: 300px;
-    margin-top: -30px;
+    margin-top: -80px;
     background: url(../img/original.jpg)no-repeat -260px 5px;
     overflow: hidden;
 
@@ -51,7 +53,7 @@ nav {
         }
 
         p:nth-of-type(4) {
-            margin-left: 55px;
+            margin-left: 40px;
             background-color: transparent;
             font-size: 18px;
             font-weight: 500;
@@ -70,4 +72,526 @@ nav {
         }
 
     }
+}
+
+// 标题
+.title-p {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(71, 71, 71);
+    margin-left: 220px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+// 轮播图
+.img-lb-1,
+.img-lb-2,
+.img-lb-3 {
+    width: 100%;
+    height: 280px;
+    margin: 0 auto;
+    display: flex;
+
+    a {
+        width: 25%;
+        margin-left: 4%;
+        border-radius: 10px;
+        border: 1px rgb(182, 182, 182) solid;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        p {
+            color: black;
+            font-size: 18px;
+            margin: 7px 0;
+        }
+
+        span {
+            padding: 5px 12px;
+            border: 1px red solid;
+            font-size: 12px;
+            color: red;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        p:nth-of-type(2) {
+            color: black;
+            font-size: 16px;
+            margin: 0;
+            margin-top: 10px;
+            margin-bottom: 5px;
+
+            span {
+                color: red;
+                border: none;
+                font-size: 16px;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        p:nth-of-type(3) {
+            color: red;
+            font-size: 14px;
+            margin: 0;
+        }
+    }
+
+    a:nth-of-type(1) {
+        margin: 0;
+    }
+
+    a:nth-of-type(2) {
+        .sty-color {
+            border: 1px green solid;
+            color: green;
+        }
+
+        .sty-color-1 {
+            color: green;
+        }
+    }
+
+    .sf {
+        background-color: rgb(254, 83, 65);
+        padding: 4px 8px;
+        padding-top: 6px;
+        position: absolute;
+        top: -3px;
+        right: -12px;
+        color: white;
+        border: none;
+    }
+
+    .tys {
+        background-color: rgb(251, 244, 203);
+        padding: 4px 8px;
+        padding-top: 6px;
+        position: absolute;
+        top: -3px;
+        right: -12px;
+        border: none;
+        color: rgb(196, 169, 106);
+    }
+
+}
+
+// 报告精选
+.box-1 {
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    margin-top: -70px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    margin-bottom: 100px;
+
+    p {
+        width: 70%;
+        height: 40px;
+        margin: 0 auto;
+
+        span {
+            font-size: 22px;
+            font-weight: 600;
+            color: rgb(71, 71, 71);
+        }
+
+        a {
+            float: right;
+            font-size: 14px;
+            color: red;
+            padding-top: 10px;
+            padding-right: 30px;
+            background: url(../img/readMore.png)no-repeat 60px 15px;
+        }
+    }
+
+    ul {
+        width: 70%;
+        margin: 0 auto;
+        overflow: hidden;
+
+        li {
+            width: 22.7%;
+            height: 240px;
+            margin-right: 3%;
+            margin-bottom: 3%;
+            float: left;
+            overflow: hidden;
+            border-radius: 6px;
+            border: 1px rgb(215, 215, 215) solid;
+
+            a {
+                display: block;
+                width: 100%;
+                height: 55%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            p {
+                width: 90%;
+                margin-top: 3px;
+                color: rgb(71, 71, 71);
+                font-size: 15px;
+            }
+
+            p:nth-of-type(2) {
+                line-height: 40px;
+                margin-top: 12px;
+
+                span:nth-of-type(1) {
+                    color: gray;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+
+                span:nth-of-type(2) {
+                    color: gray;
+                    font-size: 13px;
+                    font-weight: 400;
+                    margin-left: 45%;
+                    padding-left: 20px;
+                    background: url(../img/zan.png)no-repeat 5px 2px;
+                    background-size: 12px 12px;
+
+                }
+
+                span:nth-of-type(3) {
+                    color: gray;
+                    font-size: 13px;
+                    font-weight: 400;
+                    padding-left: 20px;
+                    background: url(../img/reply.png) no-repeat 5px 2px;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        li:nth-of-type(4),
+        li:nth-of-type(8) {
+            margin-right: 0;
+        }
+
+        li:nth-of-type(5),
+        li:nth-of-type(6),
+        li:nth-of-type(7),
+        li:nth-of-type(8) {
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+// 导购精选
+.box-2 {
+    width: 100%;
+    margin-top: -100px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    overflow: hidden;
+
+    p {
+        width: 70%;
+        height: 40px;
+        margin: 0 auto;
+
+        span {
+            font-size: 22px;
+            font-weight: 600;
+            color: rgb(71, 71, 71);
+        }
+
+        a {
+            float: right;
+            font-size: 14px;
+            color: red;
+            padding-top: 10px;
+            padding-right: 30px;
+            background: url(../img/readMore.png)no-repeat 60px 15px;
+        }
+    }
+
+    ul {
+        width: 70%;
+        margin: 0 auto;
+
+        li {
+            width: 22.7%;
+            height: 230px;
+            margin-right: 3%;
+            float: left;
+            border-radius: 6px;
+            border: 1px rgb(215, 215, 215) solid;
+            margin-bottom: 100px;
+
+            a {
+                display: block;
+                width: 100%;
+                height: 55%;
+
+                img {
+                    width: 100%;
+                    border-radius: 5px;
+                }
+            }
+
+            p {
+                width: 90%;
+                margin-top: 5px;
+                color: rgb(71, 71, 71);
+                font-size: 15px;
+            }
+
+            p:nth-of-type(2) {
+                line-height: 50px;
+                padding-bottom: 65px;
+                background: url(../img/listbg.jpg)no-repeat -6px 49px;
+
+                span:nth-of-type(1) {
+                    color: gray;
+                    font-size: 12px;
+                    font-weight: 400;
+                    margin-left: 68%;
+                    padding-left: 20px;
+                    background: url(../img/xinRedo.png)no-repeat 4px 2px;
+                    background-size: 12px 12px;
+                }
+
+                span:nth-of-type(2) {
+                    color: gray;
+                    font-size: 12px;
+                    font-weight: 400;
+                    padding-left: 20px;
+                    background: url(../img/reply.png) no-repeat 3px 2px;
+                }
+            }
+        }
+
+        li:nth-of-type(4),
+        li:nth-of-type(8) {
+            margin-right: 0;
+        }
+    }
+
+}
+
+// 发现酷玩
+.box-3 {
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    margin-top: -70px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+
+    p {
+        width: 70%;
+        height: 40px;
+        margin: 0 auto;
+
+        span {
+            font-size: 22px;
+            font-weight: 600;
+            color: rgb(71, 71, 71);
+        }
+
+        a {
+            float: right;
+            font-size: 14px;
+            color: red;
+            padding-top: 10px;
+            padding-right: 30px;
+            background: url(../img/readMore.png)no-repeat 60px 15px;
+        }
+    }
+
+    ul {
+        width: 70%;
+        margin: 0 auto;
+        overflow: hidden;
+
+        li {
+            width: 22.7%;
+            height: 240px;
+            margin-right: 3%;
+            margin-bottom: 3%;
+            float: left;
+            overflow: hidden;
+            border-radius: 6px;
+            position: relative;
+            border: 1px rgb(215, 215, 215) solid;
+
+            a {
+                display: block;
+                width: 100%;
+                height: 55%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            p {
+                width: 95%;
+                margin-top: 3px;
+                color: rgb(71, 71, 71);
+                font-size: 14px;
+                height: auto;
+                margin-top: 6px;
+
+                //文本自动换行样式
+                word-break: break-all;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                /* 这里是超出几行省略 */
+                overflow: hidden;
+            }
+
+            p:nth-of-type(2) {
+                font-size: 12px;
+                color: gray;
+            }
+
+            p:nth-of-type(3) {
+                line-height: 30px;
+                position: absolute;
+                bottom: 5px;
+                left: 2.5%;
+
+                span:nth-of-type(1) {
+                    color: red;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+
+                span:nth-of-type(2) {
+                    color: gray;
+                    font-size: 12px;
+                    font-weight: 400;
+                    padding-left: 20px;
+                    background: url(../img/xinRedo.png)no-repeat 4px 8px;
+                    background-size: 12px 12px;
+                    position: absolute;
+                    top: 0;
+                    right: 40px;
+                }
+
+                span:nth-of-type(3) {
+                    color: gray;
+                    font-size: 12px;
+                    font-weight: 400;
+                    padding-left: 20px;
+                    background: url(../img/reply.png) no-repeat 4px 8px;
+                    position: absolute;
+                    top: 0;
+                    right: 10px;
+                }
+            }
+        }
+
+        li:nth-of-type(4n) {
+            margin-right: 0;
+        }
+
+    }
+
+}
+
+// 点击加载等多
+#jzgd {
+    text-align: center;
+    color: red;
+    padding-bottom: 50px;
+    background: url(../img/more.png)no-repeat 635px 9px;
+    background-color: rgb(247, 247, 247);
+}
+
+#jzgd_1 {
+    text-align: center;
+    color: red;
+    padding-bottom: 50px;
+    background: url(../img/loading-icon.gif)no-repeat 640px 1px;
+    background-color: rgb(247, 247, 247);
+    display: none;
+}
+
+#jzgd_2 {
+    text-align: center;
+    color: green;
+    padding-bottom: 50px;
+    font-size: 20px;
+    background-color: rgb(247, 247, 247);
+    display: none;
+}
+
+// 返回底部
+#div-return {
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    background: url(../img/back.png) no-repeat 10px 18px;
+    background-color: rgb(232, 232, 232);
+    border-radius: 10px;
+    display: none;
+
+    &:hover {
+        background-color: rgb(198, 198, 198);
+        cursor: pointer;
+    }
+
+}
+
+
+//图片删闪烁
+@keyframes fade {
+
+    /* 图片删闪烁 */
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+}
+
+a:hover img {
+    animation: fade 1s ease-in infinite;
+
+}
+
+// 音响飞入动画
+@keyframes fly {
+    0% {
+        transform: translate(1200px, -600px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+#fly {
+    animation: fly 1s;
 }

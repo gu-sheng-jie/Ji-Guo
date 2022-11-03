@@ -8,21 +8,551 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./toolkit/swiper-bundle.min.css">
+    <style>
+        .swiper {
+            width: 70%;
+            height: 280px;
+            margin-bottom: 100px;
+            /* 设置Swiper风格 */
+            --swiper-navigation-color: rgb(193, 193, 193);
+            /* 单独设置按钮颜色 */
+            --swiper-navigation-size: 70px;
+            /* 设置按钮大小 */
+        }
+    </style>
 </head>
 
 <body>
     <!-- 引入顶部 -->
-    <iframe src="./top.html" id="ifname-1" frameborder="0"></iframe>
+    <iframe src="./top.html" id="ifname-1" width="100%" height="100%" frameborder="0"></iframe>
     <nav>
-        <div>
+        <div id="fly">
             <h1>幻响小贝HiFi2.1音箱</h1>
-            <p><span>126</span>人申请</p>
+            <p><span id="nav-money">126</span>人申请</p>
             <p>￥599</p>
-            <p><span>20</span>台</p>
-            <p>申请时间剩余：<span>13天5小时37分钟</span></p>
-            <button>立即申请</button>
+            <p><span id="nav-num">20</span>台</p>
+            <p>申请时间剩余：<span id="nav-time">13天5小时37分钟</span></p>
+            <button id="apply">立即申请</button>
         </div>
     </nav>
+    <p class="title-p">热门试用</p>
+    <!-- 轮播图 -->
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="img-lb-1">
+                    <a href="">
+                        <img src="./img/hot1.jpg" alt="">
+                        <p>巴慕达 The Toaster 烤面包机</p>
+                        <span>2023</span>
+                        <span>20台</span>
+                        <p><span>1392</span>申请</p>
+                        <p>剩余时间2天</p>
+                        <span class="sf">首发</span>
+                    </a>
+                    <a href="">
+                        <img src="./img/hot2.jpg" alt="">
+                        <p>Osprey小鹰户外运动专业腰包</p>
+                        <span class="sty-color">2023</span>
+                        <span class="sty-color">20台</span>
+                        <p><span>1392</span>申请</p>
+                        <p class="sty-color-1">查看试用名单</p>
+                        <span class="tys">体验师专享</span>
+                    </a>
+                    <a href="">
+                        <img src="./img/hot3.jpg" alt="">
+                        <p>Liquid image 338 运动摄像眼睛</p>
+                        <span>2023</span>
+                        <span>20台</span>
+                        <p><span>1392</span>申请</p>
+                        <p>剩余时间2天</p>
+                        <span class="sf">首发</span>
+                    </a>
+                    <a href="">
+                        <img src="./img/hot4.jpg" alt="">
+                        <p>巴慕达 The Toaster 烤面包机</p>
+                        <span>2023</span>
+                        <span>20台</span>
+                        <p><span>1392</span>申请</p>
+                        <p>剩余时间2天</p>
+                        <span class="sf">首发</span>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="img-lb-2">
+                    <a href="">
+                        <img src="./img/hot5.jpg" alt="">
+                        <p>巴慕达 The Toaster 烤面包机</p>
+                        <span>2023</span>
+                        <span>20台</span>
+                        <p><span>1392</span>申请</p>
+                        <p>剩余时间2天</p>
+                        <span class="sf">首发</span>
+                    </a>
+                    <a href="">
+                        <img src="./img/hot6.jpg" alt="">
+                        <p>Osprey小鹰户外运动专业腰包</p>
+                        <span class="sty-color">2023</span>
+                        <span class="sty-color">20台</span>
+                        <p><span>1392</span>申请</p>
+                        <p class="sty-color-1">查看试用名单</p>
+                        <span class="tys">体验师专享</span>
+                    </a>
+                    <a href="">
+                        <img src="./img/hot7.jpg" alt="">
+                        <p>Liquid image 338 运动摄像眼睛</p>
+                        <span>2023</span>
+                        <span>20台</span>
+                        <p><span>1392</span>申请</p>
+                        <p>剩余时间2天</p>
+                        <span class="sf">首发</span>
+                    </a>
+                    <a href="">
+                        <img src="./img/hot8.jpg" alt="">
+                        <p>巴慕达 The Toaster 烤面包机</p>
+                        <span>2023</span>
+                        <span>20台</span>
+                        <p><span>1392</span>申请</p>
+                        <p>剩余时间2天</p>
+                        <span class="sf">首发</span>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="img-lb-2">
+                    <a href="">
+                        <img src="./img/hot9.jpg" alt="">
+                        <p>巴慕达 The Toaster 烤面包机</p>
+                        <span>2023</span>
+                        <span>20台</span>
+                        <p><span>1392</span>申请</p>
+                        <p>剩余时间2天</p>
+                        <span class="sf">首发</span>
+                    </a>
+                    <a href="">
+                        <img src="./img/hot10.jpg" alt="">
+                        <p>Osprey小鹰户外运动专业腰包</p>
+                        <span class="sty-color">2023</span>
+                        <span class="sty-color">20台</span>
+                        <p><span>1392</span>申请</p>
+                        <p class="sty-color-1">查看试用名单</p>
+                        <span class="tys">体验师专享</span>
+                    </a>
+                    <a href="">
+                        <img src="./img/hot11.jpg" alt="">
+                        <p>Liquid image 338 运动摄像眼睛</p>
+                        <span>2023</span>
+                        <span>20台</span>
+                        <p><span>1392</span>申请</p>
+                        <p>剩余时间2天</p>
+                        <span class="sf">首发</span>
+                    </a>
+                    <a href="">
+                        <img src="./img/hot12.jpg" alt="">
+                        <p>巴慕达 The Toaster 烤面包机</p>
+                        <span>2023</span>
+                        <span>20台</span>
+                        <p><span>1392</span>申请</p>
+                        <p>剩余时间2天</p>
+                        <span class="sf">首发</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 如果需要导航按钮 -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+
+    </div>
+    <!-- 报告精选 -->
+    <div class="box-1">
+        <p>
+            <span>报告精选</span>
+            <a href="">查看更多</a>
+        </p>
+        <ul>
+            <li>
+                <a href="">
+                    <img src="./img/k1.jpg" alt="">
+                </a>
+                <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                <p>
+                    <span>● 苏苏</span>
+                    <span class="zan-1">3</span>
+                    <span class="xinxi-1">1</span>
+                </p>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/re2.jpg" alt="">
+                </a>
+                <p>怎么骑都不会累的智能自行车：云马 C1试骑体验</p>
+                <p>
+                    <span>● 好吗</span>
+                    <span class="zan-1">2</span>
+                    <span class="xinxi-1">5</span>
+                </p>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/re3.jpg" alt="">
+                </a>
+                <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                <p>
+                    <span>● 苏苏</span>
+                    <span class="zan-1">3</span>
+                    <span class="xinxi-1">3</span>
+                </p>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/re4.jpg" alt="">
+                </a>
+                <p>声音不是最优秀，但它形音完美的结合，足够打动人心</p>
+                <p>
+                    <span>● iAra</span>
+                    <span class="zan-1">4</span>
+                    <span class="xinxi-1">6</span>
+                </p>
+
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/re3.jpg" alt="">
+                </a>
+                <p>风光大片信手拈来！vivo不只是快，还是一台拍照利器</p>
+                <p>
+                    <span>● 老陈</span>
+                    <span class="zan-1">9</span>
+                    <span class="xinxi-1">7</span>
+                </p>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/re4.jpg" alt="">
+                </a>
+                <p>声音不是最优秀，但它形音完美的结合，足够打动人心</p>
+                <p>
+                    <span>● 小郭</span>
+                    <span class="zan-1">8</span>
+                    <span class="xinxi-1">2</span>
+                </p>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/re2.jpg" alt="">
+                </a>
+                <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                <p>
+                    <span>● 吉吉</span>
+                    <span class="zan-1">7</span>
+                    <span class="xinxi-1">3</span>
+                </p>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/re1.jpg" alt="">
+                </a>
+                <p>风光大片信手拈来！vivo不只是快，还是一台拍照利器</p>
+                <p>
+                    <span>● 小任</span>
+                    <span class="zan-1">8</span>
+                    <span class="xinxi-1">5</span>
+                </p>
+            </li>
+        </ul>
+    </div>
+    <!-- 导购精选 -->
+    <div class="box-2">
+        <p>
+            <span>导购精选</span>
+            <a href="">查看更多</a>
+        </p>
+        <ul>
+            <li>
+                <a href="">
+                    <img src="./img/g1.jpg" alt="">
+                </a>
+                <p>花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</p>
+                <p>
+                    <span class="zan-2">3</span>
+                    <span class="xinxi-2">1</span>
+                </p>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/g2.jpg" alt="">
+                </a>
+                <p>到底有没有完美的iPhone手机配件，答案都在这里</p>
+                <p>
+                    <span class="zan-2">5</span>
+                    <span class="xinxi-2">2</span>
+                </p>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/g3.jpg" alt="">
+                </a>
+                <p>2016，这8支钢笔够你装逼一整年</p>
+                <p>
+                    <span class="zan-2">3</span>
+                    <span class="xinxi-2">3</span>
+                </p>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/g4.jpg" alt="">
+                </a>
+                <p>他用12年找一把完美 剃须刀给你2万字终极购买指南</p>
+                <p>
+                    <span class="zan-2">7</span>
+                    <span class="xinxi-2">2</span>
+                </p>
+            </li>
+        </ul>
+    </div>
+    <!-- 发现酷玩 -->
+    <div class="box-3">
+        <p>
+            <span>发现酷玩</span>
+            <a href="">查看更多</a>
+        </p>
+        <ul id="box-3-more">
+            <li>
+                <a href="">
+                    <img src="./img/k4.jpg" alt="">
+                </a>
+                <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                <p>可以测定食物成分及营养</p>
+                <p>
+                    <span class="money">￥ 1212</span>
+                    <span class="zan-3">3</span>
+                    <span class="xinxi-3">1</span>
+                </p>
+
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/k2.jpg" alt="">
+                </a>
+                <p>怎么骑都不会累的智能自行车</p>
+                <p>可以测定食物成分及营养</p>
+                <p>
+                    <span class="money">￥ 1412</span>
+                    <span class="zan-3">2</span>
+                    <span class="xinxi-3">5</span>
+                </p>
+
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/k3.jpg" alt="">
+                </a>
+                <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                <p>可以测定食物成分及营养</p>
+                <p>
+                    <span class="money">￥ 1699</span>
+                    <span class="zan-3">6</span>
+                    <span class="xinxi-3">4</span>
+                </p>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/k4.jpg" alt="">
+                </a>
+                <p>声音不是最优秀，但它形音完美的结合，足够打动人心</p>
+                <p>可以测定食物成分及营养</p>
+                <p>
+                    <span class="money">￥ 1999</span>
+                    <span class="zan-3">2</span>
+                    <span class="xinxi-3">1</span>
+                </p>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/k2.jpg" alt="">
+                </a>
+                <p>风光大片信手拈来！vivo不只是快，还是一台拍照利器</p>
+                <p>可以测定食物成分及营养</p>
+                <p>
+                    <span class="money">￥ 2999</span>
+                    <span class="zan-3">5</span>
+                    <span class="xinxi-3">2</span>
+                </p>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/re4.jpg" alt="">
+                </a>
+                <p>声音不是最优秀，但它形音完美的结合，足够打动人心</p>
+                <p>可以测定食物成分及营养</p>
+                <p>
+                    <span class="money">￥ 2199</span>
+                    <span class="zan-3">3</span>
+                    <span class="xinxi-3">6</span>
+                </p>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/re2.jpg" alt="">
+                </a>
+                <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                <p>可以测定食物成分及营养</p>
+                <p>
+                    <span class="money">￥ 1999</span>
+                    <span class="zan-3">2</span>
+                    <span class="xinxi-3">2</span>
+                </p>
+
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/re1.jpg" alt="">
+                </a>
+                <p>风光大片信手拈来！vivo不只是快，还是一台拍照利器</p>
+                <p>可以测定食物成分及营养</p>
+                <p>
+                    <span class="money">￥ 2399</span>
+                    <span class="zan-3">5</span>
+                    <span class="xinxi-3">2</span>
+                </p>
+
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/k4.jpg" alt="">
+                </a>
+                <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                <p>可以测定食物成分及营养</p>
+                <p>
+                    <span class="money">￥ 1249</span>
+                    <span class="zan-3">2</span>
+                    <span class="xinxi-3">8</span>
+                </p>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/k2.jpg" alt="">
+                </a>
+                <p>怎么骑都不会累的智能自行车：云马 C1试骑体验</p>
+                <p>可以测定食物成分及营养</p>
+                <p>
+                    <span class="money">￥ 1888</span>
+                    <span class="zan-3">2</span>
+                    <span class="xinxi-3">4</span>
+                </p>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/k3.jpg" alt="">
+                </a>
+                <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                <p>可以测定食物成分及营养</p>
+                <p>
+                    <span class="money">￥ 2345</span>
+                    <span class="zan-3">6</span>
+                    <span class="xinxi-3">2</span>
+                </p>
+
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/k4.jpg" alt="">
+                </a>
+                <p>声音不是最优秀，但它形音完美的结合，足够打动人心</p>
+                <p>可以测定食物成分及营养</p>
+                <p>
+                    <span class="money">￥ 5999</span>
+                    <span class="zan-3">4</span>
+                    <span class="xinxi-3">5</span>
+                </p>
+
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/k2.jpg" alt="">
+                </a>
+                <p>风光大片信手拈来！vivo不只是快，还是一台拍照利器</p>
+                <p>可以测定食物成分及营养</p>
+                <p>
+                    <span class="money">￥ 2389</span>
+                    <span class="zan-3">7</span>
+                    <span class="xinxi-3">2</span>
+                </p>
+
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/re4.jpg" alt="">
+                </a>
+                <p>声音不是最优秀，但它形音完美的结合，足够打动人心</p>
+                <p>可以测定食物成分及营养</p>
+                <p>
+                    <span class="money">￥ 2480</span>
+                    <span class="zan-3">3</span>
+                    <span class="xinxi-3">3</span>
+                </p>
+
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/re2.jpg" alt="">
+                </a>
+                <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                <p>可以测定食物成分及营养</p>
+                <p>
+                    <span class="money">￥ 7499</span>
+                    <span class="zan-3">7</span>
+                    <span class="xinxi-3">5</span>
+                </p>
+
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/re1.jpg" alt="">
+                </a>
+                <p>风光大片信手拈来！vivo不只是快，还是一台拍照利器</p>
+                <p>可以测定食物成分及营养</p>
+                <p>
+                    <span class="money">￥ 9999</span>
+                    <span class="zan-3">2</span>
+                    <span class="xinxi-3">6</span>
+                </p>
+            </li>
+        </ul>
+    </div>
+    <!-- 点击加载更多 -->
+    <p id="jzgd">点击加载更多</p>
+    <p id="jzgd_1">正在加载中</p>
+    <p id="jzgd_2">数据加载完毕！</p>
+    <!-- 返回顶部 -->
+    <div id="div-return"></div>
+    <!-- 引入底部 -->
+    <iframe src="./bottom.html" id="ifname-2" width="100%" height="100%" frameborder="0"></iframe>
+
 </body>
 
 </html>
+<script src="./index.js"></script>
+<script src="./toolkit/swiper-bundle.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper', {
+        direction: 'horizontal', // 垂直切换选项
+        loop: true, // 循环模式选项
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 2000,
+            stopOnLastSlide: false,
+            disableOnInteraction: true,
+        },
+
+
+    })        
+</script>
