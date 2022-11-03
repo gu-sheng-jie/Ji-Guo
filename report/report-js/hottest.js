@@ -34,7 +34,7 @@ var flg = true; //开关
 function show() {
     for (var item of dataList) {
         str = `
-        <a href="">
+        <a href="./report-a.html">
                 <div class="angle">
                     <img src="${item.img}">
                     <div class="pic-txt">

@@ -13,7 +13,7 @@ h3 {
 }
 #iframename1 {
   width: 100%;
-  height: 100px;
+  height: 105px;
   border: 0;
 }
 #iframename2 {
@@ -74,7 +74,7 @@ h3 {
   border-radius: 6px 6px 0 0;
   width: 100%;
 }
-.big .all ul li a p:nth-of-type(1) {
+.big .all ul li p:nth-of-type(1) {
   font-size: 14px;
   height: 55px;
   color: #474747;
@@ -87,23 +87,27 @@ h3 {
   /* 这里是超出几行省略 */
   overflow: hidden;
 }
-.big .all ul li a p:nth-of-type(2) {
+.big .all ul li p:nth-of-type(2) {
   width: 80px;
   margin-left: 140px;
   padding: 10px;
 }
-.big .all ul li a p:nth-of-type(2) span {
+.big .all ul li p:nth-of-type(2) span {
   display: inline-block;
   text-indent: 15px;
   width: 30px;
 }
-.big .all ul li a p:nth-of-type(2) .sp1 {
+.big .all ul li p:nth-of-type(2) .sp1 {
   background: url(../../img/xin.png) no-repeat left center;
 }
-.big .all ul li a p:nth-of-type(2) .sp2 {
+.big .all ul li p:nth-of-type(2) .sp1_ {
+  background: url(../../img/xinRedh.png) no-repeat left center;
+  background-size: 12px;
+}
+.big .all ul li p:nth-of-type(2) .sp2 {
   background: url(../../img/reply.png) no-repeat left center;
 }
-.big .all ul li a div {
+.big .all ul li div {
   position: absolute;
   left: 0px;
   bottom: -12px;

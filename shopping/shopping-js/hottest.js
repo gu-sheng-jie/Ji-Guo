@@ -60,3 +60,18 @@ function show() {
         return flg = false;
     }
 }
+
+
+//点击红心部分
+//  用来判断是偶数还是奇数
+let judge = 1 // 控制心
+function fn(that) {
+    judge++
+    if (judge % 2 == 0) {
+        that.className = 'sp1_';
+        that.innerHTML++
+    } else {
+        that.className = 'sp1'
+        that.innerHTML--
+    }
+}

@@ -1,21 +1,21 @@
 // 体验师专享
-var a_ = document.querySelectorAll('.nav-b1  a');
+// var a_ = document.querySelectorAll('.nav-b1  a');
 
-for (var i = 0; i < a_.length; i++) {
-    a_[i].setAttribute('index', i);
+// for (var i = 0; i < a_.length; i++) {
+//     a_[i].setAttribute('index', i);
 
-    a_[i].onclick = function() {
+//     a_[i].onclick = function() {
 
-        var index = this.getAttribute('index');
-        for (var j = 0; j < a_.length; j++) {
+//         var index = this.getAttribute('index');
+//         for (var j = 0; j < a_.length; j++) {
 
-            a_[j].className = '';
-            a_[index].className = 'clr';
-        }
-        return false;
-    }
+//             a_[j].className = '';
+//             a_[index].className = 'clr';
+//         }
+//         return false;
+//     }
 
-}
+// }
 
 
 

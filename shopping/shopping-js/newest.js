@@ -34,12 +34,13 @@ function show() {
     for (var item of dataList) {
         `                                                                               `
         str = `
-                   <a href="">
-                        <img src="${item.img}" alt="">
-                        <p>${item.text}</p>
-                        <p><span class="sp1">${item.like}</span><span class="sp2">${item.words}</span></p>
-                        <div></div>
-                    </a>
+            <a href="">
+            <img src="${item.img}" alt="">
+            </a>
+            <p>${item.text}</p>
+            <p><span class="sp1">${item.like}</span><span class="sp2">${item.words}</span></p>
+            <div></div>
+                    
         `
         var li_ = document.createElement('li');
         li_.innerHTML = str;
@@ -59,27 +60,30 @@ function show() {
     }
 }
 
-
-//*点击红心部分*/
-// function fn(that) {
-//     var red = "http://127.0.0.1:5500/%E6%9E%81%E6%9E%9C%E7%BD%91/Ji-Guo/img/xinRedh.pmg";
-//     var black = "http://127.0.0.1:5500/%E6%9E%81%E6%9E%9C%E7%BD%91/Ji-Guo/img/xin.pmg"
-
-//     var src = that.src == red ? black : red;
-//     that.src = src;
-//     if (that.src == red) {
-//         that.innerHTML++;
-//     } else {
-//         that.innerHTML--;
-//     }
-// }
-/* 单机收藏 */
+//点击红心部分
+//  用来判断是偶数还是奇数
+var judge = 3 // 控制心
 function fn(that) {
-    that.className = 'sp1_';
-    that.innerHTML++;
+    var judge = that.innerHTML
+    judge++
+    if (judge % 2 == 0) {
+        that.className = 'sp1_';
+        that.innerHTML++
+    } else {
+        that.className = 'sp1'
+        that.innerHTML--
+    }
 }
-/* 双击取消 */
-function show(that) {
-    that.className = 'sp1'
-    that.innerHTML -= 3;
-}
+
+
+
+// /* 单机收藏 */
+// function fn(that) {
+//     that.className = 'sp1_';
+//     that.innerHTML++;
+// }
+// /* 双击取消 */
+// function show(that) {
+//     that.className = 'sp1';
+//     that.innerHTML -= 3;
+// }
