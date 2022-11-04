@@ -1,17 +1,17 @@
 // 找到button
 var playMore_ = document.querySelectorAll('button')[0];
 // 点击事件
-playMore_.onclick =  function () {
+playMore_.onclick = function () {
     var playMore_ = document.querySelectorAll('button')[0];
-    playMore_.setAttribute('class','loading')
-    playMore_ = setTimeout( function () {
+    playMore_.setAttribute('class', 'loading')
+    playMore_ = setTimeout(function () {
         Get()
         var playMore_ = document.querySelectorAll('button')[0];
-            playMore_.setAttribute('class','more-btn')
+        playMore_.setAttribute('class', 'more-btn')
     }, 2000)
 }
 clearInterval(playMore_)
- 
+
 // ajax
 var dataList = [];
 function Get() {
@@ -36,7 +36,7 @@ var index = 0
 var ul_ = document.getElementsByTagName('ul')[1]
 function show() {
     // 拼接字符串
-    
+
     var str = '';
     for (var item of dataList[index]) {
 
@@ -62,18 +62,18 @@ function show() {
         </a> 
        </li>
         `
-        
+
         ul_.innerHTML += str
-  
+
     }
     index++;
-    if (index==4) {
-    setTimeout(function () {
-        var playMore_ = document.querySelectorAll('button')[0];
-        playMore_.style.opacity = 0;
-    }, 500)
-   
-}
+    if (index == 4) {
+        setTimeout(function () {
+            var playMore_ = document.querySelectorAll('button')[0];
+            playMore_.style.opacity = 0;
+        }, 500)
+
+    }
 
 
 }

@@ -136,7 +136,7 @@ newPass.onblur = function () {
 }
 // 立即注册
 zc.onclick = function () {
-    if (phone_z.test(phone.value) && verify_1.value == 'r2B7' && verify_2.value == str && user_z.test(username.value) && pass_z.test(pass.value) && newPass.value == pass.value) {
+    if (phone_z.test(phone.value) && (verify_1.value == 'r2B7' || verify_1.value == 'r2b7') && verify_2.value == str && user_z.test(username.value) && pass_z.test(pass.value) && newPass.value == pass.value) {
         alert('注册成功！')
         location.href = './login.html'
         setCookie('user', username.value)
