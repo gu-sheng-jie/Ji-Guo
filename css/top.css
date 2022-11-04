@@ -46,6 +46,9 @@ header div div a:nth-of-type(1) img {
   height: 70%;
   margin-top: 10px;
 }
+header div div .color-a {
+  color: red;
+}
 header div div:nth-of-type(2) {
   /* 右侧 */
   flex: 1;
@@ -103,4 +106,7 @@ header div div:nth-of-type(2) #top_user:hover {
 }
 a:hover img {
   animation: fade 1s ease-in infinite;
+}
+#wsad {
+  color: greenyellow;
 }

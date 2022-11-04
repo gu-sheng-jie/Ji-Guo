@@ -9,7 +9,7 @@ li {
 
 iframe {
     width: 100%;
-    height: 100px;
+    height: 105px;
 }
 
 h1,
@@ -65,58 +65,70 @@ a {
     padding-top: 30px;
     margin: 0 auto;
 }
+
 /* 生活 */
 .newest-1 li {
-  
+
     background: #fff;
     margin-bottom: 35px;
     border: 1px solid #ebecec;
     border-radius: 6px;
 }
-.newest-1 li:nth-of-type(1){
+
+.newest-1 li:nth-of-type(1) {
     height: 544px;
 }
+
 .newest-1 li:nth-of-type(2),
 .newest-1 li:nth-of-type(3),
 .newest-1 li:nth-of-type(4),
 .newest-1 li:nth-of-type(5),
 .newest-1 li:nth-of-type(6),
-.newest-1 li:nth-of-type(7){
+.newest-1 li:nth-of-type(7) {
     height: 300px;
 }
-.newest-1 li:nth-of-type(8){
+
+.newest-1 li:nth-of-type(8) {
     height: 300px;
 }
+
 .newest-1 li dl dt {
     padding: 19px 0 19px 30px;
     font-size: 16px;
     line-height: 25px;
 }
-.newest-1 li dd{
+
+.newest-1 li dd {
     width: 97%;
     padding: 0 13px 18px;
     display: inline-block;
     border-bottom: 1px dashed #e0e0e0;
 }
+
 .newest-1 dd .list {
     float: left;
     width: 150px;
-    
+
     text-align: center;
     font-size: 14px;
     margin-top: 17px;
 }
-.newest-1  li a, .use-nav a {
+
+.newest-1 li a,
+.use-nav a {
     color: #a3a3a3;
 }
+
 .newest-1 dd .list .info {
     padding-top: 12px;
 }
-.newest-1  li a:hover{
+
+.newest-1 li a:hover {
     color: #fe5431;
 }
+
 /* 底部 */
-.bbc{
-   
+.bbc {
+
     height: 350px;
 }

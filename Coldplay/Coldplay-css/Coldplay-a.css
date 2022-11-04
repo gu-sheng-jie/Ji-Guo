@@ -9,7 +9,7 @@ li {
 
 iframe {
     width: 100%;
-    height: 100px;
+    height: 105px;
 }
 
 h1,
@@ -27,7 +27,7 @@ nav {
     /* width: 100%; */
     height: 300px;
     margin-top: -35px;
-    background: url(../../img/original.jpg) no-repeat -15px 5px;
+    background: url(../../img/original.jpg) no-repeat -250px 5px;
     overflow: hidden;
 }
 
@@ -35,7 +35,7 @@ nav div {
     width: 25%;
     height: 250px;
     margin-top: 30px;
-    margin-left: 1050px;
+    margin-left: 860px;
     overflow: hidden;
 }
 
@@ -115,7 +115,7 @@ nav div button {
     border-left: 6px #fe5341 solid;
 }
 
- #box_1 ul li {
+#box_1 ul li {
     width: 188px;
     height: 50px;
     float: left;
@@ -133,67 +133,82 @@ nav div button {
 .box .box_1 .box1>ul>li:nth-of-type(1) p {
     border-bottom: 2px solid #fe5341;
 }
+
 .box li:nth-of-type(1) {
     background: url(../../img/use1.png) no-repeat center top;
 }
+
 .box li:nth-of-type(2) {
     background: url(../../img/use2.png) no-repeat center top;
 }
+
 .box li:nth-of-type(3) {
     background: url(../../img/use3.png) no-repeat center top;
 }
+
 .box li:nth-of-type(4) {
     background: url(../../img/use4.png) no-repeat center top;
 }
+
 .box li:nth-of-type(5) {
     background: url(../../img/use5.png) no-repeat center top;
 }
+
 /* 试用报告详情 */
 
-.box .fi{
+.box .fi {
     width: 1000px;
     height: 2045px;
     /* background-color: #fe5341; */
     margin: 100px auto;
-    margin-bottom:0px ;
+    margin-bottom: 0px;
 }
-.box .left{
+
+.box .left {
     float: left;
     height: 100%;
     font-size: 16px;
     width: 700px;
     /* background-color: aliceblue; */
 }
-.box .txet1{
+
+.box .txet1 {
     position: relative;
     padding: 18px 0 16px 0px;
     font-size: 20px;
 }
-.box .txet1>span{
+
+.box .txet1>span {
     border-left: 6px #fe5341 solid;
 }
-.box .top{
+
+.box .top {
     color: red;
     font-size: 18px;
     font-weight: bold
 }
+
 .box .little {
     color: rgb(0, 112, 192);
     font-weight: bold;
 }
-.box .blue{
+
+.box .blue {
     color: #0177A7;
 }
-.box .red{
+
+.box .red {
     color: red;
     font-weight: bold;
 }
+
 /* 购买渠道 */
 .money {
     font-size: 40px;
     padding: 20px 0 15px;
     color: #fe5341;
 }
+
 .buyBtn {
     color: #fff;
     background: #fe5341;
@@ -206,23 +221,27 @@ nav div button {
     font-size: 18px;
     text-align: center;
 }
+
 .resource {
     margin: 10px 0;
     font-size: 14px;
     text-align: center;
     color: #a3a3a3;
 }
+
 .info h5 {
     color: #474747;
     font-size: 16px;
     padding: 5px 0;
 }
+
 .text3 {
     color: #a3a3a3;
     font-size: 14px;
 }
+
 /* 热门试用 */
-.txet2{
+.txet2 {
     width: 1000px;
     margin: auto;
     font-weight: bold;
@@ -230,6 +249,7 @@ nav div button {
     padding: 18px 0 16px 0px;
     font-size: 20px;
 }
+
 .txet2 a.more {
     font-weight: normal;
     position: absolute;
@@ -251,11 +271,13 @@ nav div button {
     background-color: #fff;
     margin: 20px 15px 0px 13px;
     margin-bottom: 40px;
-  }
-  .txet2 ul li > a {
+}
+
+.txet2 ul li>a {
     color: #ccc;
-  }
-  .txet2 ul li > a > span {
+}
+
+.txet2 ul li>a>span {
     display: inline-block;
     background: #fe5341;
     color: #f5e8e8;
@@ -267,12 +289,14 @@ nav div button {
     top: 0;
     right: 0;
     z-index: 5;
-  }
-  .txet2 ul li > a img {
+}
+
+.txet2 ul li>a img {
     width: 218px;
     height: 128px;
-  }
-  @keyframes fade {
+}
+
+@keyframes fade {
 
     0%,
     100% {
@@ -284,15 +308,16 @@ nav div button {
     }
 }
 
-.txet2  ul li a img:hover {
+.txet2 ul li a img:hover {
     animation: fade 1s ease-in infinite;
 }
 
-  .txet2 ul li > a .all-btm {
+.txet2 ul li>a .all-btm {
     padding: 8px 8px 14px;
     text-align: center;
-  }
-.txet2 ul li > a .all-btm h2 {
+}
+
+.txet2 ul li>a .all-btm h2 {
     font-size: 14px;
     height: 20px;
     font-weight: 500;
@@ -305,9 +330,10 @@ nav div button {
     -webkit-line-clamp: 2;
     /* 这里是超出几行省略 */
     overflow: hidden;
-  }
-  .txet2 ul li > a .all-btm p:nth-of-type(1) span {
-    border: 1px solid  #fe5341;
+}
+
+.txet2 ul li>a .all-btm p:nth-of-type(1) span {
+    border: 1px solid #fe5341;
     display: inline-block;
     padding: 2px 10px;
     margin: 0 5px;
@@ -315,25 +341,28 @@ nav div button {
     border-radius: 5px;
     font-size: 12px;
     font-weight: 400;
-    
-  }
-  .txet2 ul li > a .all-btm p:nth-of-type(2) {
+
+}
+
+.txet2 ul li>a .all-btm p:nth-of-type(2) {
     margin: 8px 0;
     color: #333;
     font-size: 16px;
     font-weight: 400;
-  }
-  .txet2 ul li > a .all-btm p:nth-of-type(2) span {
+}
+
+.txet2 ul li>a .all-btm p:nth-of-type(2) span {
     color: #fe5341;
-   
- 
-  }
-  .txet2 ul li > a .all-btm p:nth-of-type(3) {
+
+
+}
+
+.txet2 ul li>a .all-btm p:nth-of-type(3) {
     font-size: 14px;
     color: #fe5341;
     font-weight: 400;
-  }
- 
+}
+
 /* 底部 */
 .bbc {
     width: 99%;

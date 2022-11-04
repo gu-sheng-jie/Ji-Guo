@@ -20,24 +20,31 @@ log_img.onclick = function () {
 // 首页
 shouye.onclick = function () {
     parent.location.href = './index.html'
-    shouye.style.color = 'red'
 }
 // 酷玩
-sy.onclick = function () {
-    parent.location.href = './index.html'
+kw.onclick = function () {
+    parent.location.href = './Coldplay/category.html'
 }
 // 导购
+dg.onclick = function () {
+    parent.location.href = './shopping/newest.html'
+}
+// 试用
 sy.onclick = function () {
-    parent.location.href = './index.html'
+    parent.location.href = './trial/DZtrial.html'
 }
 // 报告
 bg.onclick = function () {
-    parent.location.href = './report/hottest.html'
+    parent.location.href = './report/newest.html'
 }
-
 
 // 获取注册
 var top_zc = document.getElementById('top_zc')
+
+// 注册
+top_zc.onclick = function () {
+    parent.location.href = './register.html'
+}
 // 获取 有户名
 var top_user = document.getElementById('top_user')
 
@@ -53,3 +60,17 @@ if (win == 'true') {
 } else {
 
 }
+
+// function www(that) {
+//     that.style.color = 'red'
+// }
+
+
+// for (var i = 0; i < color_a.length; i++) {
+//     color_a[i].setAttribute('index', i)
+//     color_a[i].onclick = function () {
+//         var index = this.getAttribute('index')
+//         color_a[i].className = ''
+//         color_a[index].className = 'color-a'
+//     }
+// }

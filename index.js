@@ -238,7 +238,7 @@ function show() {
         for (var item of dataList[index]) {
             str += `
             <li>
-                <a href="">
+                <a href="./Coldplay/Coldplay-a.html">
                     <img src="${item.img}" alt="">
                 </a>
                 <p>${item.text}</p>
@@ -267,3 +267,7 @@ function newZan(that) {
 function newXingXi(that) {
     that.innerHTML++
 }
+
+
+var index_img = document.getElementsByName('img')
+console.log(index_img);
