@@ -14,6 +14,12 @@
             width: 70%;
             height: 280px;
             margin-bottom: 100px;
+        }
+
+        .swiper-button-prev {
+            position: absolute;
+            top: 580px;
+            left: 130px;
             /* 设置Swiper风格 */
             --swiper-navigation-color: rgb(193, 193, 193);
             /* 单独设置按钮颜色 */
@@ -21,9 +27,15 @@
             /* 设置按钮大小 */
         }
 
-        /* .swiper-button-prev {}
-
-        .swiper-button-next {} */
+        .swiper-button-next {
+            top: 580px;
+            right: 130px;
+            /* 设置Swiper风格 */
+            --swiper-navigation-color: rgb(193, 193, 193);
+            /* 单独设置按钮颜色 */
+            --swiper-navigation-size: 70px;
+            /* 设置按钮大小 */
+        }
     </style>
 </head>
 
@@ -165,12 +177,10 @@
                 </div>
             </div>
         </div>
-
-        <!-- 如果需要导航按钮 -->
-        <!-- <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div> -->
-
     </div>
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
     <!-- 报告精选 -->
     <div class="box-1">
         <p>

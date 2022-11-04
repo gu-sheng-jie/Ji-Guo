@@ -27,8 +27,10 @@
   line-height: 26px;
   margin-top: 20px;
   padding: 0 20px;
-  color: #474747;
   border-left: 7px #fe5441 solid;
+}
+.register-box p a {
+  color: #474747;
 }
 .register-box div {
   /* 版心 */

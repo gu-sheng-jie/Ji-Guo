@@ -42,7 +42,7 @@ verify_1.onfocus = function () {
     h_span[1].style.color = 'grey'
 }
 verify_1.onblur = function () {
-    if (verify_1.value == 'r2B7') {
+    if (verify_1.value == 'r2B7' || verify_1.value == 'r2b7') {
         h_span[1].innerHTML = '输入正确'
         h_span[1].style.color = 'green'
     } else {
