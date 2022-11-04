@@ -1,0 +1,234 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+iframe {
+    width: 100%;
+    height: 105px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrap {
+    width: 1000px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.wrap>h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.nav {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.nav a {
+    color: #a3a3a3;
+    display: inline-block;
+    padding-bottom: 12px;
+    width: 165px;
+    font-size: 18px;
+}
+
+.nav>#on {
+    border-bottom: 4px #fe5431 solid;
+    padding-bottom: 8px;
+    color: #fe5431;
+}
+
+/* 发现酷玩 */
+.newest {
+    width: 100%;
+    height: 100%;
+    background-color: #F7F7F7;
+}
+
+.newest>.newest-1 {
+    width: 1000px;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+.newest-1 li {
+    width: 220px;
+    height: 231px;
+    line-height: 21px;
+    margin: 0 37px 20px -10px;
+    float: left;
+    border: 1px solid #e6e9e9;
+    background: #fff;
+    border-radius: 6px;
+}
+
+@keyframes fade {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+}
+
+.newest-1 ul li a img:hover {
+    animation: fade 1s ease-in infinite;
+}
+
+.newest-1 ul li a img {
+    border-radius: 6px 6px 0 0;
+}
+
+.newest-1 ul li a .info {
+    padding: 7px 10px 10px;
+}
+
+.name {
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 14px;
+    height: 45px;
+    overflow: hidden;
+    word-break: break-all;
+    color: rgb(27, 27, 27);
+}
+
+.name span {
+    color: #a3a3a3;
+    display: block;
+    font-size: 12px;
+}
+
+#name {
+    color: #a3a3a3;
+    display: block;
+    font-size: 12px;
+}
+
+#name .txe {
+    padding: 13px 0px;
+}
+
+.txe {
+    padding: 13px 0px;
+}
+
+.txe .txe-1 {
+    margin-left: 10px;
+    color: #fe5431;
+    float: left;
+}
+
+.txe .txe-2 {
+    position: relative;
+    margin-right: 8px;
+    margin-top: -1px;
+    float: right;
+    font-size: 12px;
+}
+
+.txe .txe-2 span {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 14px;
+    margin-left: 3px;
+}
+
+.txe .txe-2>.xin>img {
+    position: absolute;
+    top: 6px;
+    left: 3px;
+}
+
+
+/* .txe .txe-2>.xin11 {
+    color: #a3a3a3;
+    background: url(../../img/xinRedh.png) no-repeat left center;
+    background-size:12px 13px
+} */
+/* .txe .txe-2>.xin2 {
+    color: #a3a3a3;
+    background-size:12px 13px
+}              */
+.txe .txe-2>.xin2>img {
+    position: absolute;
+    top: 6px;
+    left: 30px;
+}
+
+.txe .txe-2>.xin2 {
+    color: #a3a3a3;
+    /* background: url(../../img/xin.png) no-repeat left center; */
+
+}
+
+/* 点击加载 */
+.playMore {
+    color: #a3a3a3;
+}
+
+.playMore {
+    text-align: center;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.playMore .more-btn {
+    border: none;
+    background: url(../../img/more.png) no-repeat left center;
+    color: #fe5341;
+    padding-left: 20px;
+}
+
+.loading {
+    border: none;
+    background: url(../../img/loading-icon.gif) no-repeat left center;
+    color: #fe5341;
+    padding-left: 20px;
+
+}
+
+/* 底部 */
+.bbc {
+
+    height: 350px;
+}
+
+/* .xin_{
+    background: url(../../img/xinRedh.png)no-repeat 0px center;
+    background-size:12px 13px
+} */
+/* .xin1_{
+    background: url(../../img/xin.png)no-repeat 0px center;
+    background-size:12px 13px
+} */
+
+
+/* .xin_{
+    background: url(../../img/xinRedh.png)no-repeat 0px center;
+    background-size:12px 13px
+} */
+
+.xin {
+    background: url(../../img/xinRedh.png)no-repeat 0px center;
+    background-size: 12px 13px
+}

@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  h1,
+  h2,
+  h3 {
+    font-weight: normal;
+  }
+  /*头部*/
+  #iframename1 {
+    width: 100%;
+    height: 105px;
+    border: 0;
+  }
+  /*底部*/
+  #iframename2 {
+    width: 100%;
+    height: 350px;
+    border: 0;
+  }
+  /*免费试用*/
+.nav{
+    width: 1000px;
+    margin: 0 auto;
+    h1{
+        text-align: center; 
+        padding: 15px 0 30px; 
+        font-size: 40px;
+    }
+    .nav-b{
+        text-align: center;
+        a{
+            display: inline-block;
+            padding-bottom: 12px;
+            width: 165px;
+            font-size: 18px;
+            &:nth-of-type(1){
+                color: #fe5431;
+                border-bottom: 4px #fe5431 solid;
+                padding-bottom: 8px;
+            }
+            &:nth-of-type(2){
+                color: #a3a3a3;
+            }
+        }
+    }
+}
+.nav-b1{
+    border-top: 1px solid #F0F0F0;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    a{
+        color: #a3a3a3;
+        display: inline-block;
+        width: 165px;
+        font-size: 18px;
+        &:nth-of-type(2){
+            color: #474747;
+        }
+    }
+}
+/*内容部分*/
+.big{
+    background-color: #F7F7F7;
+    .all{
+        width: 1000px;
+        margin: 0 auto;
+        padding-top: 25px;
+        ul{
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            // justify-content: space-evenly;
+            justify-content: space-between;
+            &:nth-of-type(2){
+                width: 740px;
+            }
+            li{
+               
+                position: relative;
+                width: 220px;
+                height: 286px;
+                border: 1px solid #e6e9e9;
+                border-radius: 6px;
+                background-color: #fff;
+                margin-bottom: 40px;
+                
+                &>a{
+                    color: #fe5341;
+                    &>span{
+                        display: inline-block;
+                        background: #fe5341;
+                        color: #f5e8e8;
+                        position: absolute;
+                        line-height: 22px;
+                        padding: 0 8px;
+                        border-radius: 0 0 0 6px;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        z-index: 5;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                    .all-btm{
+                        padding: 8px 8px 14px;
+                        text-align: center;
+                        h2{
+                            font-size: 14px;
+                            height: 48px;
+                            font-weight: 500;
+                            color: #333;
+                        }
+                        p:nth-of-type(1){
+                            span{
+                                border: 1px solid #fe5341;
+                                display: inline-block;
+                                padding: 2px 10px;
+                                margin: 0 5px;
+                                border-radius: 5px;
+                                font-size: 12px;
+                            }
+                        }
+                        p:nth-of-type(2){
+                            margin: 8px 0;
+                            color: #333;
+                            span{
+                                color: #fe5341;
+                            }
+                        }
+                        p:nth-of-type(3){
+                            font-size: 14px;
+                        }
+                    }
+                }
+                
+
+
+            }
+        }
+    }
+
+
+    /*加载更多部分*/
+    .more{
+        text-align: center;
+        padding:10px 0 50px 0;
+        a{
+            color: #a3a3a3;
+        }
+    }
+}
+/* 图片删闪烁 */
+@keyframes fade {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+}
+
+img:hover  {
+    animation: fade 1s ease-in infinite;
+}

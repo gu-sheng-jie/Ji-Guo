@@ -1,0 +1,141 @@
+* {
+    /* 初始化 */
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header {
+    /* 顶部 */
+    width: 100%;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px 0px rgb(176, 176, 176) inset;
+
+    div {
+        /* 版心 */
+        width: 70%;
+        height: 80px;
+        margin: 0 auto;
+        display: flex;
+
+        // 左侧
+        div {
+            /* 左侧 */
+            height: 80px;
+            margin-left: 0;
+            flex: 1.6;
+            display: flex;
+
+            a {
+                width: 15%;
+                height: 80px;
+                color: black;
+                line-height: 93px;
+                text-align: center;
+                font-size: 21px;
+
+                &:hover {
+                    color: rgb(254, 83, 65);
+                }
+            }
+
+            a:nth-of-type(1) {
+                flex: 1.2;
+
+                // background: url(../img/logonew.png) no-repeat 0px 14px;
+                // background-size: 80% 65%;
+                img {
+                    width: 85%;
+                    height: 70%;
+                    margin-top: 10px;
+                }
+            }
+
+            .color-a {
+                color: red;
+            }
+        }
+
+        // 右侧
+        div:nth-of-type(2) {
+            /* 右侧 */
+            flex: 1;
+
+            img {
+                width: 35px;
+                height: 35px;
+                margin-top: 25px;
+                margin-left: 260px;
+                transition: .3s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            button {
+                width: 55px;
+                height: 30px;
+                border-radius: 3px;
+                background-color: white;
+                border: 1px red solid;
+                color: rgb(254, 84, 145);
+                margin-top: 25px;
+                margin-left: 25px;
+
+                &:hover {
+                    background-color: rgb(254, 83, 65);
+                    color: white;
+                }
+            }
+
+            #top_user {
+                width: 200px;
+                height: 45px;
+                line-height: 45px;
+                position: absolute;
+                top: 20px;
+                font-size: 16px;
+                right: 95px;
+                color: rgb(254, 83, 65);
+                display: none;
+                padding-left: 50px;
+                background: url(../img/用户名.png)no-repeat 8px 3px;
+                background-size: 35px 35px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+/* 图片删闪烁 */
+@keyframes fade {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+}
+
+a:hover img {
+    animation: fade 1s ease-in infinite;
+
+}
+
+
+#wsad {
+    color: greenyellow;
+}

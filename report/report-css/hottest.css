@@ -1,0 +1,217 @@
+/*报告最热*/
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3 {
+  font-weight: normal;
+}
+#iframename1 {
+  width: 100%;
+  height: 105px;
+  border: 0;
+}
+#iframename2 {
+  width: 100%;
+  height: 350px;
+  border: 0;
+}
+/*体验报告*/
+.nav {
+  width: 1000px;
+  margin: 0 auto;
+}
+.nav h1 {
+  text-align: center;
+  padding: 30px 0 30px;
+  font-size: 40px;
+}
+.nav .nav-b {
+  text-align: center;
+}
+.nav .nav-b a {
+  display: inline-block;
+  padding-bottom: 12px;
+  width: 165px;
+  font-size: 18px;
+}
+.nav .nav-b a:nth-of-type(2) {
+  color: #fe5431;
+  border-bottom: 4px #fe5431 solid;
+  padding-bottom: 8px;
+}
+.nav .nav-b a:nth-of-type(1) {
+  color: #a3a3a3;
+}
+/*内容部分*/
+.big {
+  width: 100%;
+  background-color: #F7F7F7;
+  overflow: hidden;
+}
+.big .box {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 30px;
+  overflow: hidden;
+  /*内容左边部分*/
+  /*内容右边部分*/
+}
+.big .box .box-l {
+  width: 700px;
+  margin-right: 30px;
+  float: left;
+  /*加载更多部分*/
+}
+.big .box .box-l ul > li {
+  width: 100%;
+  position: relative;
+  /* li下面部分*/
+}
+.big .box .box-l ul > li .angle {
+  border: 1px solid #E6E9E9;
+  border-radius: 6px;
+  font-size: 0;
+  overflow: hidden;
+}
+.big .box .box-l ul > li .angle img {
+  width: 100%;
+  height: 100%;
+}
+.big .box .box-l ul > li .angle .pic-txt {
+  position: absolute;
+  left: 0;
+  bottom: 64px;
+  width: 100%;
+  height: 118px;
+  padding: 10px 22px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0 0 6px 6px;
+}
+.big .box .box-l ul > li .angle .pic-txt > p {
+  font-size: 18px;
+  padding: 9px 0 12px;
+  font-weight: normal;
+  color: #333;
+}
+.big .box .box-l ul > li .angle .pic-txt .pic-con {
+  margin: 12px 0;
+  color: #a3a3a3;
+  font-size: 13px;
+}
+.big .box .box-l ul > li .angle .pic-txt .pic-con p:nth-of-type(1) {
+  float: left;
+}
+.big .box .box-l ul > li .angle .pic-txt .pic-con p:nth-of-type(1) span:nth-of-type(1) {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../../img/tx.jpg') no-repeat 0 0;
+  background-size: 100%;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.big .box .box-l ul > li .angle .pic-txt .pic-con p:nth-of-type(1) span:nth-of-type(2) {
+  color: #fe695a;
+  margin: 0 8px;
+}
+.big .box .box-l ul > li .angle .pic-txt .pic-con p:nth-of-type(2) {
+  float: right;
+}
+.big .box .box-l ul > li .angle .pic-txt .pic-con p:nth-of-type(2) span:nth-of-type(1) {
+  display: inline-block;
+  vertical-align: middle;
+  text-indent: 15px;
+  background: url('../../img/zan.png') no-repeat 0 2px;
+}
+.big .box .box-l ul > li .angle .pic-txt .pic-con p:nth-of-type(2) span:nth-of-type(2) {
+  display: inline-block;
+  margin-left: 8px;
+  vertical-align: middle;
+  text-indent: 15px;
+  background: url('../../img/reply.png') no-repeat 0 2px;
+}
+.big .box .box-l ul > li .li-btm {
+  text-align: center;
+  height: 48px;
+  line-height: 48px;
+  font-size: 14px;
+  color: #a3a3a3;
+  border-radius: 6px;
+  border: 1px solid #e6e9e9;
+  margin: 15px 0;
+}
+.big .box .box-l .more {
+  text-align: center;
+  padding: 10px 0 50px 0;
+}
+.big .box .box-l .more button {
+  display: inline-block;
+  text-indent: 20px;
+  background: url('../../img/more.png') no-repeat 0px center;
+  color: #fe5341;
+  border: none;
+}
+.big .box .box-l .more .load {
+  display: inline-block;
+  width: 145px;
+  margin: 0 auto;
+  text-indent: 29px;
+  background: url('../../img/loading-icon.gif') no-repeat 0px center;
+  color: #fe5341;
+  display: none;
+}
+.big .box .box-r {
+  width: 270px;
+  height: 700px;
+  float: left;
+}
+.big .box .box-r > h3 {
+  font-size: 18px;
+  height: 25px;
+  line-height: 25px;
+  padding-left: 30px;
+  border-left: 8px solid #FE5341;
+  color: #474747;
+  margin-bottom: 20px;
+}
+.big .box .box-r h3:nth-of-type(2) {
+  margin-top: 80px;
+}
+.big .box .box-r ul li h3 {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.big .box .box-r ul li p {
+  color: #a3a3a3;
+  font-size: 14px;
+}
+.over {
+  width: 500px;
+  height: 50px;
+  background-color: #5eff00;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+/* 图片删闪烁 */
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+img:hover {
+  animation: fade 1s ease-in infinite;
+}
