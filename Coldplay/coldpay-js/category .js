@@ -41,27 +41,27 @@ function show() {
     for (var item of dataList[index]) {
 
         str += `
-                <li>
-                <a href="">
-               <img src="${item.img}" width="220" height="130" >
-               <div class="info">
-               <p id='name'>
-               ${item.text}
-               <span id='name1'>${item.description}</span>
-                 <div class="txe">
-                 <span class="txe-1">
-                ${item.price}
-                </span>
-                <div class="txe-2">
-                <span class="xin"> ${item.like}</span>
-                <span class="xin2"> ${item.words}</span>
-                 </div>
-                 </div>
-                </p>
-                </div>
-                </a> 
-               </li>
-                `
+        <li>
+        <a href="./Coldplay-a.html">
+       <img src="${item.img}" width="220" height="130" >
+       <div class="info">
+       <p class='name'>
+       ${item.text}
+       <span >搭载自动避障系统</span>
+         <div class="txe">
+         <span class="txe-1">
+         ￥ 433
+        </span>
+        <div class="txe-2">
+        <span class="xin"><img src="../img/xin.png">${item.like}</span>
+        <span class="xin2"><img src="../img/xin.png"> ${item.words}</span>
+         </div>
+         </div>
+        </p>
+        </div>
+        </a> 
+       </li>
+        `
         
         ul_.innerHTML += str
   
@@ -78,10 +78,5 @@ function show() {
 
 }
 //   找到心
-var xin=document.getElementsByClassName('xin');
-console.log(xin);
-xin.onclick = function() {
-    var xin=document.getElementsByClassName('xin')[0];
-    xin.setAttribute('class','xin3')
 
-}
+

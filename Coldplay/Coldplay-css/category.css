@@ -139,6 +139,7 @@ a {
 }
 
 .txe .txe-2 {
+    position: relative;
     margin-right: 8px;
     margin-top: -1px;
     float: right;
@@ -151,16 +152,24 @@ a {
     padding-left: 14px;
     margin-left: 3px;
 }
-
+.txe .txe-2>.xin>img{
+    position: absolute;
+    top: 6px;
+    left: 3px;
+}
 .txe .txe-2>.xin {
     color: #a3a3a3;
-    background: url(../../img/xin.png) no-repeat left center;
+    /* background: url(../../img/xin.png) no-repeat left center; */
 
 }
-
+.txe .txe-2>.xin2>img{
+    position: absolute;
+    top: 6px;
+    left: 30px;
+}
 .txe .txe-2>.xin2 {
     color: #a3a3a3;
-    background: url(../../img/xin.png) no-repeat left center;
+    /* background: url(../../img/xin.png) no-repeat left center; */
 
 }
 

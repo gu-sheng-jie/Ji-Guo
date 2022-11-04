@@ -138,6 +138,7 @@ a {
 }
 
 .txe .txe-2 {
+    position: relative;
     margin-right: 8px;
     margin-top: -1px;
     float: right;
@@ -151,15 +152,30 @@ a {
     margin-left: 3px;
 }
 
-.txe .txe-2>.xin {
-    color: #a3a3a3;
-    background: url(../../img/xin.png) no-repeat left center;
-
+.txe .txe-2>.xin>img{
+    position: absolute;
+    top: 6px;
+    left: 3px;
 }
 
+
+/* .txe .txe-2>.xin11 {
+    color: #a3a3a3;
+    background: url(../../img/xinRedh.png) no-repeat left center;
+    background-size:12px 13px
+} */
+/* .txe .txe-2>.xin2 {
+    color: #a3a3a3;
+    background-size:12px 13px
+}              */
+.txe .txe-2>.xin2>img{
+    position: absolute;
+    top: 6px;
+    left: 30px;
+}
 .txe .txe-2>.xin2 {
     color: #a3a3a3;
-    background: url(../../img/xin.png) no-repeat left center;
+    /* background: url(../../img/xin.png) no-repeat left center; */
 
 }
 
@@ -194,3 +210,22 @@ a {
    
     height: 350px;
 }
+/* .xin_{
+    background: url(../../img/xinRedh.png)no-repeat 0px center;
+    background-size:12px 13px
+} */
+/* .xin1_{
+    background: url(../../img/xin.png)no-repeat 0px center;
+    background-size:12px 13px
+} */
+
+
+/* .xin_{
+    background: url(../../img/xinRedh.png)no-repeat 0px center;
+    background-size:12px 13px
+} */
+
+.xin{
+    background: url(../../img/xinRedh.png)no-repeat 0px center;
+    background-size:12px 13px}
+
